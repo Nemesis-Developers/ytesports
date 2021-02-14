@@ -202,6 +202,6 @@ client.on("ready", () => {
 
 
 client.on("ready", () => {
-    client.user.setActivity(`Dev. XavierxGlitchGod`, { type: "PLAYING"})
+    client.user.setActivity(`GIVING MY BEST TO PROVIDE A BETTER GAMING ENVIRONMENT`, { type: "COMPETING"})
 })
 client.login(process.env.TOKEN);
