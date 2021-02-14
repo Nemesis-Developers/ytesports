@@ -27,8 +27,8 @@ module.exports = {
       const commands = await client.commands;
 
       let emx = new MessageEmbed()
-        .setTitle("Young Terminator - Official bot")
-        .setDescription("Prefix: YT | Dev. XavierxGlitchgod")
+        .setTitle("Young Terminator")
+        .setDescription("ALL ABOUT YOUNG TERMINATOR ESPORTS")
         .setColor("GREEN")
         .setFooter(client.user.username, client.user.displayAvatarURL())
         .setThumbnail(client.user.displayAvatarURL());
