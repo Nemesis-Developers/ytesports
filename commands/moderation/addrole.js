@@ -24,7 +24,7 @@ module.exports = {
       const embed = new MessageEmbed()
       
       .setColor("RANDOM")
-      .setDescription(`<a:ok_:731369076315652167>role added ${arole}`)
+      .setDescription(`<a:emoji_101:752199185348165782> role added ${arole}`)
       
       await message.channel.send(embed)
       
