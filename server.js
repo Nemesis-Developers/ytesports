@@ -202,6 +202,6 @@ client.on("ready", () => {
 
 
 client.on("ready", () => {
-    client.user.setActivity(`TO PROVIDE A BETTER GAMING ENVIRONMENT`, { type: "COMPETING"})
+    client.user.setActivity(`TO PROVIDE A BETTER GAMING ENVIRONMENT`, { type: "streaming", url: "https://www.youtube.com/c/YOUNGTERMINATORESPORTS"})
 })
 client.login(process.env.TOKEN);
