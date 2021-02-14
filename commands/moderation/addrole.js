@@ -18,13 +18,13 @@ module.exports = {
     
     let arole = message.mentions.roles.first();
     
-    if(!arole) return message.reply(`<:no:677902165859237894>please mention role for add!`)
+    if(!arole) return message.reply(`<:xmark:801109909030174760>  Please mention role!`)
     
     
       const embed = new MessageEmbed()
       
       .setColor("RANDOM")
-      .setDescription(`<a:emoji_101:752199185348165782> role added ${arole}`)
+      .setDescription(`<a:emoji_101:752199185348165782> <:pingone:738489489814585397>  Successfully adds ${arole} to the user `)
       
       await message.channel.send(embed)
       
