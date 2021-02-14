@@ -1,0 +1,8 @@
+{
+  "prefix": "YT",
+  "default_prefix": "YT",
+     
+ "YOUTUBE_API_KEY": "",
+    "QUEUE_LIMIT": 0,
+    "COLOR": "00FFFF"
+}
