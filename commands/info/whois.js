@@ -4,7 +4,7 @@ const moment = require("moment")
 module.exports = {
   name: "userinfo",
   category: "info",
-  aliases: ["whois", "user"],
+  aliases: ["whois", "userinfo", "i"],
   usage: "userinfo <MENTION>",
   description: "Get advance stats of given person or yourself",
   run: async (client, message, args) => {
