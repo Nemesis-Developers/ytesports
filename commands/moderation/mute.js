@@ -27,7 +27,7 @@ module.exports = {
       return message.channel.send(" \``` please give some  reason for mute\``` ");
     }
 
-    const vrole = user.roles.cache
+    
 
     let muterole = message.guild.roles.cache.find(x => x.name === "muted");
 
@@ -35,7 +35,7 @@ module.exports = {
       return message.channel.send("\```please create role name with muted \``` ");
     }
     
-    await user.roles.remove(vrole);
+    
     await user.roles.add(muterole);
 
     await message.channel.send(
