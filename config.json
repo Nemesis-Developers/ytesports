@@ -1,6 +1,6 @@
 {
-  "prefix": "YT",
-  "default_prefix": "YT",
+  "prefix": "X,",
+  "default_prefix": "X,",
      
  "YOUTUBE_API_KEY": "",
     "QUEUE_LIMIT": 0,
