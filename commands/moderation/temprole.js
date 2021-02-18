@@ -6,14 +6,13 @@ module.exports = {
   aliases: ["trole", "temprole"],
   category: "moderation",
   description: "Add role to any user",
-  run: async (client, message, args) => {
+      run: async (client, message, args) => {
    if (!message.member.hasPermission("MANAGE_ROLES")) {
       return message.channel.send("sorry you need permission to mute someone");
     }
     if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
       return message.channel.send("I do not have permission to mute");
     } 
-    
 let muteTime = ms(args[0]);
     
 const targets = message.mentions.members;
