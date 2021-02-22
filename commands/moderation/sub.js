@@ -1,6 +1,8 @@
-const Discord = require('discord.js');
+  
+const { MessageEmbed } = require('discord.js')
 module.exports = {
   name: "sub",
+  aliases:["sub", "subription"],
   category: "info",
   description: "Registration closed message",
   run: async (client, message, args) => {
