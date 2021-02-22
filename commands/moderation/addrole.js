@@ -24,7 +24,7 @@ module.exports = {
       const embed = new MessageEmbed()
       
       .setColor("RANDOM")
-      .setDescription(`<a:emoji_101:752199185348165782> Successfully adds ${arole} to the user `)
+      .setDescription(`<a:emoji_101:752199185348165782> Successfully added ${arole} to the user(S)`)
       
       await message.channel.send(embed)
       
