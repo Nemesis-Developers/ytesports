@@ -16,7 +16,7 @@ module.exports = {
 	.setFooter('Young Terminator Esports');
 
 message.channel.send(RegClosed);
-    message.channel.send(`**To Subcribe Fixed Slot Check** <#719936663005954088>`)
+    message.channel.send(`**To Subscribe Fixed Slot Check** <#719936663005954088>`)
     message.delete()
   }
 }
