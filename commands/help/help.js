@@ -20,6 +20,7 @@ module.exports = {
         .addField("Usage", "`" + command.usage + "`" || "Not Provied")
         .setThumbnail(client.user.displayAvatarURL())
         .setColor("GREEN")
+        .setImage('https://i.imgur.com/Zoy3wKc.gif')
         .setFooter(client.user.username, client.user.displayAvatarURL());
 
       return message.channel.send(embed);
@@ -29,7 +30,7 @@ module.exports = {
       let emx = new MessageEmbed()
         .setTitle("Young Terminator")
         .setDescription("ALL ABOUT YOUNG TERMINATOR ESPORTS")
-        .setColor("GREEN")
+        .setColor('#FA780B')
         .setImage('https://i.imgur.com/Zoy3wKc.gif')
         .setFooter(client.user.username, client.user.displayAvatarURL())
         .setThumbnail(client.user.displayAvatarURL());
