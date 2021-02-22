@@ -82,7 +82,8 @@ run: (client, message, args) => {
 
 			.setDescription(`**Guild information for __${message.guild.name}__**`)
 
-			.setColor('BLUE')
+			.setColor('#FA780B')
+		        .setImage('https://i.imgur.com/Zoy3wKc.gif')
 
 			.setThumbnail(message.guild.iconURL({ dynamic: true }))
 
