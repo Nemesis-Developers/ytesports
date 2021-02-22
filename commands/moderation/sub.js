@@ -11,7 +11,7 @@ module.exports = {
 	.setTitle('REGISTRATION CLOSED 🚧')
 	.setDescription('Subscription slots are available!!')
 .addFields('PREMANENT FIXED SLOT')
-.addField(NO NEED TO REGISTER DAILY')
+.addField('NO NEED TO REGISTER DAILY')
 .addField('NO NEED TO WAIT FOR SLOT LIST')
 .addField('YOU WILL GET A MEMBERSHIP ROLE FROM YT ESPORT')
 .addField('SUBSCRIBE TODAY')
