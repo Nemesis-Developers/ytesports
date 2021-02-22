@@ -10,10 +10,9 @@ module.exports = {
 	.setColor('#FA780B')
 	.setTitle('REGISTRATION CLOSED 🚧')
 	.setDescription('**Subscription slots are available!!**\n\n**PREMANENT FIXED SLOT**\n\n**NO NEED TO REGISTER DAILY**\n\n**NO NEED TO WAIT FOR SLOT LIST**\n\n**YOU WILL GET A MEMBERSHIP ROLE FROM YT ESPORT**\n\n**SUBSCRIBE TODAY**\n\n')
-.addField('SUBSCRIBE TODAY', 'https://discord.gg/4ThTZSXJfH', false)
   .setImage('https://i.imgur.com/6s117hn.gif')
   .setTimestamp()
-	.setFooter('Young Terminator Esports');
+  .setFooter('Young Terminator Esports');
 
 message.channel.send(RegClosed);
     message.channel.send(`**To Subscribe Fixed Slot Check** <#719936663005954088>`)
