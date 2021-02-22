@@ -9,7 +9,7 @@ module.exports = {
     const RegClosed = new Discord.MessageEmbed()
 	.setColor('#FA780B')
 	.setTitle('REGISTRATION CLOSED 🚧')
-	.setDescription('**Subscription slots are available!!**\n\n**PREMANENT FIXED SLOT**\n\n**NO NEED TO REGISTER DAILY**\n\n**NO NEED TO WAIT FOR SLOT LIST**\n\n**YOU WILL GET A MEMBERSHIP ROLE FROM YT ESPORT**\n\n**SUBSCRIBE TODAY**\n\n')
+	.setDescription('**Subscription slots are available!!**\n\n**PREMANENT FIXED SLOT**\n\n**NO NEED TO REGISTER DAILY**\n\n**NO NEED TO WAIT FOR SLOT LIST**\n\n**YOU WILL GET A MEMBERSHIP ROLE FROM YT ESPORTS**\n\n**SUBSCRIBE TODAY**\n\n')
   .setImage('https://i.imgur.com/6s117hn.gif')
   .setTimestamp()
   .setFooter('Young Terminator Esports');
