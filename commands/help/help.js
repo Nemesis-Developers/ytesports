@@ -30,6 +30,7 @@ module.exports = {
         .setTitle("Young Terminator")
         .setDescription("ALL ABOUT YOUNG TERMINATOR ESPORTS")
         .setColor("GREEN")
+        .setImage('https://i.imgur.com/Zoy3wKc.gif')
         .setFooter(client.user.username, client.user.displayAvatarURL())
         .setThumbnail(client.user.displayAvatarURL());
 
