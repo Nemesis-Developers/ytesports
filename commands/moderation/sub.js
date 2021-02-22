@@ -5,7 +5,7 @@ module.exports = {
   category: "moderation",
   description: "Registration closed message",
   run: async (client, message, args) => {
-    if(!message.member.hasPermission("MANAGE_ROLES"))
+	  if (!message.member.hasPermission("MANAGE_ROLES"))
     return
    
     let RegClosed = new MessageEmbed()
