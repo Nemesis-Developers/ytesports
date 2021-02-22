@@ -10,6 +10,13 @@ module.exports = {
 	.setColor('#FA780B')
 	.setTitle('REGISTRATION CLOSED 🚧')
 	.setDescription('Subscription slots are available!!')
+    .addFields(
+		{ name1: 'PREMANENT FIXED SLOT', value: '' },
+		{ name2: 'NO NEED TO REGISTER DAILY', value: '' },
+		{ name3: 'NO NEED TO WAIT FOR SLOT LIST', value: '', inline: true },
+		{ name4: 'YOU WILL GET A MEMBERSHIP ROLE FROM YT ESPORT', value: '', inline: true },
+	)
+	.addField('SUBSCRIBE TODAY', '', true)
   .setImage('https://i.imgur.com/6s117hn.gif')
   .setTimestamp()
 	.setFooter('Young Terminator Esports');
