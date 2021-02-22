@@ -1,3 +1,4 @@
+const discord = require("discord.js");
 module.exports = {
   name: "sub",
   aliases:["sub", "subription"],
@@ -6,7 +7,8 @@ module.exports = {
   run: async (client, message, args) => {
     if(!message.member.hasPermission("MANAGE_ROLES"))
     return
-    const RegClosed = new Discord.MessageEmbed()
+   
+    let RegClosed = new MessageEmbed()
 	.setColor('#FA780B')
 	.setTitle('REGISTRATION CLOSED 🚧')
 	.setDescription('Subscription slots are available!!')
