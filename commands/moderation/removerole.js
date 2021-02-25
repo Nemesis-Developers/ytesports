@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js')
 const { Role } = require("discord.js")
 module.exports = {
-  name: "addrole",
+  name: "removerole",
   aliases: ["rr", "rrole"],
   category: "moderation",
   description: "Add role to any user",
