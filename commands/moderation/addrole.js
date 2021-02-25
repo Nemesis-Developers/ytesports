@@ -19,7 +19,7 @@ module.exports = {
     let arole = message.mentions.roles.first();
     
     if(!arole) return message.reply(`<:no:677902165859237894>please mention role for add!`)
-const highest = message.member.roles.highest; if (Role.comparePositions(highest, arole) <= 0) return message.channel.send(`The role You mention must be lower than the position of your highest role.`);
+const highest = message.member.roles.highest; if (Role.comparePositions(highest, arole) <= 0) return message.channel.send(`The role You mention must be lower than the position of your highest role.\n **Bahut Tez Ho Rahe Ho**`);
       const embed = new MessageEmbed()
       
       .setColor("RANDOM")
