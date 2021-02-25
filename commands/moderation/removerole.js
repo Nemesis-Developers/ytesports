@@ -23,7 +23,7 @@ const highest = message.member.roles.highest; if (Role.comparePositions(highest,
       const embed = new MessageEmbed()
       
       .setColor("RANDOM")
-      .setDescription(`<a:emoji_101:752199185348165782> Successfully added ${arole} to the user(S)`)
+      .setDescription(`<a:emoji_101:752199185348165782> Successfully Removed ${arole} From user(S)`)
       
       await message.channel.send(embed)
       
