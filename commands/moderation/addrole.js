@@ -7,7 +7,7 @@ module.exports = {
   description: "Add role to any user",
   run: async (client, message, args) => {
    if (!message.member.hasPermission("MANAGE_ROLES")) {
-      return message.channel.send("sorry you need permission to mute someone");
+      return message.channel.send("sorry you need permission");
     }
     if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
       return message.channel.send("I do not have permission to mute");
