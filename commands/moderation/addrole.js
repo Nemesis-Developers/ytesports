@@ -1,8 +1,8 @@
 const { MessageEmbed } = require('discord.js')
-
+const { Role } = require("discord.js")
 module.exports = {
   name: "addrole",
-  aliases: ["mr",],
+  aliases: ["mr", "P!role"],
   category: "moderation",
   description: "Add role to any user",
   run: async (client, message, args) => {
@@ -18,15 +18,12 @@ module.exports = {
     
     let arole = message.mentions.roles.first();
     
-    if(!arole) return message.reply(`<:xmark:801109909030174760>  Please mention role!`)
-    
-    const highest = message.member.roles.highest; 
-    if (Role.comparePositions(highest, arole) <= 0) return 
-    message.channel.send(`The role You mention must be lower than the position of your highest role.\n **Bahut Tez Ho Rahe Ho**`);
+    if(!arole) return message.reply(`<:no:677902165859237894>please mention role for add!`)
+const highest = message.member.roles.highest; if (Role.comparePositions(highest, arole) <= 0) return message.channel.send(`The role You mention must be lower than the position of your highest role.\n **Bahut Tez Ho Rahe Ho**`);
       const embed = new MessageEmbed()
       
       .setColor("RANDOM")
-      .setDescription(`<a:emoji_101:752199185348165782> Successfully added ${arole} to the user(S)`)
+      .setDescription(`<a:ok_:731369076315652167>role added ${arole}`)
       
       await message.channel.send(embed)
       
