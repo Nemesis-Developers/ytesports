@@ -174,7 +174,7 @@ if(db.has(`afk-${message.author.id}+${message.guild.id}`)) {
     //checking for mentions
     if(message.mentions.members.first()) {
         if(db.has(`afk-${message.mentions.members.first().id}+${message.guild.id}`)) {
-            message.channel.send(message.mentions.members.first().user.tag + " is AFK :" + db.get(`afk-${message.mentions.members.first().id}+${message.guild.id}`))
+            message.channel.send(message.mentions.members.first().user.tag + " is AFK : " + db.get(`afk-${message.mentions.members.first().id}+${message.guild.id}`))
         }else return;
     }else;
  })
