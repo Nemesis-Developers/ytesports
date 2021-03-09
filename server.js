@@ -162,6 +162,30 @@ client.on("guildCreate", guild => {
 });
 
 
+
+client.on("message", async message => {
+if(message.content.startsWith('X,afk'))return;
+if(db.has(`afk-${message.author.id}+${message.guild.id}`)) {
+        const info = db.get(`afk-${message.author.id}+${message.guild.id}`)
+        await db.delete(`afk-${message.author.id}+${message.guild.id}`)
+        message.reply(`Your afk status has been removed (${info})`)
+   message.member.setNickname('')
+}
+    //checking for mentions
+    if(message.mentions.members.first()) {
+        if(db.has(`afk-${message.mentions.members.first().id}+${message.guild.id}`)) {
+            message.channel.send(message.mentions.members.first().user.tag + " is AFK :" + db.get(`afk-${message.mentions.members.first().id}+${message.guild.id}`))
+        }else return;
+    }else;
+ })
+
+
+
+
+
+
+
+
 // Set the bot's online/idle/dnd/invisible status
 client.on("ready", () => {
     client.user.setStatus("online");
