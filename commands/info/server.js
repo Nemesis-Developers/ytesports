@@ -106,7 +106,9 @@ run: (client, message, args) => {
 				'\u200b'
 
 			])
-
+		
+		
+                        .addField("Owner", `The owner of this server is ${message.guild.owner}`)
 			.addField('Statistics', [
 
 				`**❯ Role Count:** ${roles.length}`,
