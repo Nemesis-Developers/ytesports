@@ -193,6 +193,24 @@ client.on("ready", () => {
 });
 
 
+// bot Join vc 
+client.on("ready", () => {
+    const channel = client.channels.cache.get("749846805788885043");
+    if (!channel) return console.error("The channel does not exist!");
+    channel.join().then(connection => {
+        // Yay, it worked!
+        console.log("Successfully connected.");
+    }).catch(e => {
+
+        // Oh no, it errored! Let's log it to console :slight_smile:
+        console.error(e);
+    });
+});
+
+
+
+
+
 
 client.on("ready", () => {
     client.user.setActivity(`TO PROVIDE A BETTER GAMING ENVIRONMENT`, { type: "STREAMING", url: "https://www.youtube.com/c/YOUNGTERMINATORESPORTS"})
