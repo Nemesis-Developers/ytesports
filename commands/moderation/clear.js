@@ -4,13 +4,16 @@ module.exports = {
   category: "moderation",
   description: "Delete bulk messages with 1 command",
   run: async (client, message, args) => {
-    
-            
-    if (message.deletable) {
-        message.delete();
-    }
 
-    if (!message.member.hasPermission("MANAGE_MESSAGES")) {
+const member = message.mentions.members.first();
+const messages = message.channel.messages.fetch();
+
+if (member) {
+  const userMessages = (await messages).filter((m) => m.author.id === member.id);
+await message.channel.bulkDelete(userMessages);
+message.channel.send(`${message.mentions.members.first().user.tag}'s messages have been cleared!`)
+}
+ else   {if (!message.member.hasPermission("MANAGE_MESSAGES")) {
         return message.reply("Missing Permissions!").then(m => m.delete(5000));
     }
 
@@ -27,6 +30,6 @@ module.exports = {
 
     message.channel.bulkDelete(deleteAmount, true)
     .catch(err => message.reply(`Something went wrong... ${err}`));
-    
+ }
   }
 }
