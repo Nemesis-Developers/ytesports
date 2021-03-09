@@ -153,7 +153,7 @@ client.on("guildCreate", guild => {
   
     .setTimestamp()
 
-    .setColor("32CD32")
+    .setColor("#FA780B")
 
     .setFooter(`Servers Count - ${client.guilds.cache.size}`);
 
