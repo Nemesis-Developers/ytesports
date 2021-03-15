@@ -3,6 +3,7 @@ const db = require("quick.db");
 
 module.exports = {
   name: "voicemove",
+  aliases: ["drag", "dakka"],
   category: "moderation",
   usage: "voicemove",
   description: "Sabko Kheech lo",
