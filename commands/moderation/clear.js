@@ -4,6 +4,13 @@ module.exports = {
   category: "moderation",
   description: "Delete bulk messages with 1 command",
   run: async (client, message, args) => {
+    
+    if (!message.member.hasPermission("MANAGE_ROLES")) {
+      return message.channel.send("Sorry you need permission");
+    }
+    if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
+      return message.channel.send("I do not have permission");
+    }
 
 const member = message.mentions.members.first();
 const messages = message.channel.messages.fetch();
