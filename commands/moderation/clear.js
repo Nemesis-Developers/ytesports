@@ -5,10 +5,10 @@ module.exports = {
   description: "Delete bulk messages with 1 command",
   run: async (client, message, args) => {
     
-    if (!message.member.hasPermission("MANAGE_ROLES")) {
+    if (!message.member.hasPermission("ADMINISTRATOR")) {
       return message.channel.send("Sorry you need permission");
     }
-    if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
+    if (!message.guild.me.hasPermission("ADMINISTRATOR")) {
       return message.channel.send("I do not have permission");
     }
 
