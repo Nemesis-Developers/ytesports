@@ -2,7 +2,7 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "voicemove",
-  aliases: ["drag", "dakka"],
+  aliases: ["drag", "dakka", "vm"],
   category: "moderation",
   description: "Sabko Kheech lo",
   run: async (client, message, args) => {if (!message.member.permissions.any(["ADMINISTRATOR", "MOVE_MEMBERS"])) {
