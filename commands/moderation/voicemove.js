@@ -5,7 +5,6 @@ module.exports = {
   name: "voicemove",
   aliases: ["drag", "dakka"],
   category: "moderation",
-  usage: "voicemove",
   description: "Sabko Kheech lo",
   run: async (client, message, args) => {if (!message.member.permissions.any(["ADMINISTRATOR", "MOVE_MEMBERS"])) {
     return message.reply(":x: You don't have `Move_Members or Administrator` power to use this command.");
