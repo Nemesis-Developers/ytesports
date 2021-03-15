@@ -14,7 +14,7 @@ if (!message.guild.me.voice.connection) {
     channel.join().then((connection) => {
         message.guild.me.voice.setSelfDeaf(true);
         const paras = new MessageEmbed()
-        .setDescription('** Now, move me and Ill drag users to a new voice channel.**')
+        .setDescription('** Now, move me and I will drag you all to a new voice channel.**')
          .setColor('RANDOM')
 message.channel.send(paras) 
          client.on("voiceStateUpdate", async (oldmem, newmem) => {
