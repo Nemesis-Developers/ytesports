@@ -6,7 +6,7 @@ module.exports = {
   usage: "DM <@mention> <message>",
   description: "DM server members!",
   run: async (client, message, args) => {
-    if (!message.member.hasPermission("MANAGE_ROLES")) {
+    if (!message.member.hasPermission("ADMINISTRATION")) {
       return message.channel.send(
         "Access restricted!"
       );
