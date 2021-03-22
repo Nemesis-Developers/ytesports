@@ -8,7 +8,7 @@ module.exports = {
     if (!message.member.hasPermission("ADMINISTRATOR")) {
       return message.channel.send("Sorry you need permission");
     }
-    if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
+    if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) {
       return message.channel.send("I do not have permission");
     }
 
