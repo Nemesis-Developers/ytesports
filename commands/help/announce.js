@@ -8,7 +8,7 @@ category: "moderation",
 usage: "embed <text to say>",
 description: "Returns provided text in Embed form.",
 run: async(client, message, args) => {
-  if(!message.member.hasPermission("ADMINISTRATION")) return message.channel.send(`YOU DO NOT HAVE PERMISSION `)
+  if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send(`YOU DO NOT HAVE PERMISSION `)
  await message.delete()
   let say = message.content.split(" ").slice(1).join(" ")
   if(!say) return message.channel.send(`❌ | `+"I Cannot Repeat Blank Message")
