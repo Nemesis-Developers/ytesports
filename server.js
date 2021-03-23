@@ -31,7 +31,6 @@ client.on("message", async message => {
     return message.reply(`Official bot of Young Terminator Esports™. Made with ❤️ and Node.JS`);
   }
 
-  if (message.author.bot) return;
   if (!message.guild) return;
   if (!message.content.startsWith(default_prefix)) return;
 
@@ -54,26 +53,6 @@ client.on("message", async message => {
 });
 
 
-
-//chatbot
-
-client.on("message", async message => {
-if (message.channel.name == "chatbot") {
-if (message.author.bot) return;
-message.content = message.content.replace(/@(everyone)/gi, "everyone").replace(/@(here)/gi, "here");
-if (message.content.includes(`@`)) {
-return message.channel.send(`**:x: Please dont mention anyone**`);
- }
-  message.channel.startTyping();
-if (!message.content) return message.channel.send("Please say something.");
-fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${client.user.username}&ownername=XavierxGlitchGod`)
-    .then(res => res.json())
-    .then(data => {
-        message.channel.send(`> ${message.content} \n <@${message.author.id}> ${data.message}`);
-    });
-      message.channel.stopTyping();
-}
-});
 
 //LEVEL
 
