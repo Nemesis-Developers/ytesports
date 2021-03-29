@@ -43,7 +43,7 @@ module.exports = {
 let embed = new MessageEmbed()
 .setColor('#0099ff')
 	.setTitle('**WARNED!!**')
-	.setDescription(`${user} HAS BEEN WARNED! ${reason}. Multiple violations will lead to server ban!`)
+	.setDescription(`${user} HAS BEEN WARNED! ${reason}.`)
 	.setThumbnail('https://i.ibb.co/PCnBZ8w/IMG-20210205-191207.jpg')
 	.setFooter('Young Terminator eSports')
 	await message.channel.send(embed);
