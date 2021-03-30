@@ -13,7 +13,7 @@ module.exports = {
    }
    message.channel.updateOverwrite(message.channel.guild.roles.everyone, { SEND_MESSAGES: true })
  const Embed = new Discord.MessageEmbed()
-.setDescription('🔒 Channel has been unlocked!')
+.setDescription('🔓 Channel has been unlocked!')
 .setColor('#D6680E')
  message.channel.send(Embed);
 message.delete()
