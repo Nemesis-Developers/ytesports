@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
 name: "sendmedia",
-aliases: ["sendmedia", "sm"],
+aliases: ["say", "sm"],
 category: "moderation",
 usage: "embed <text to say>",
 description: "Returns provided text in Embed form.",
