@@ -18,7 +18,7 @@ run: async(client, message, args) => {
   .setColor("RANDOM")
 .setFooter(` ${message.guild}`)
 .setTimestamp()
-  message.channel.send(embed)
+  message.channel.send(say)
 message.delete()
 }
 }
