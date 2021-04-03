@@ -35,7 +35,7 @@ message.channel.send(`${message.mentions.members.first().user.tag}'s messages ha
         deleteAmount = parseInt(args[0]);
     }
 
-    message.channel.bulkDelete(deleteAmount, true).filter(m => !m.pinned).catch(err => message.reply(`Something went wrong... ${err}`));
+    message.channel.bulkDelete(deleteAmount, true).catch(err => message.reply(`Something went wrong... ${err}`));
  }
   }
 }
