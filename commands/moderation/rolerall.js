@@ -15,6 +15,6 @@ module.exports={
 const targets1 = message.guild.members.cache.filter(m => m.roles.cache.has(role)).size
 
    await targets.forEach(member => member.roles.remove(role))
-message.channel.send(`Removed ${role} from ${targets1} members`)
+message.channel.send(`Removed ${role}`)
 console.log('Hogaya')
 }}};
