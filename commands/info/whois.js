@@ -77,28 +77,14 @@ module.exports = {
 
       //OTHER STUFF 
       embed.setAuthor(user.user.tag, user.user.displayAvatarURL({ dynamic: true }))
-    
-    
 
-    let member1 = message.mentions.members.first() || message.member,
-  user = member.user;
-    
-    
-    
       //CHECK IF USER HAVE NICKNAME
       if (user.nickname !== null) embed.addField("Nickname", user.nickname)
       embed.addField("Joined At", moment(user.joinedAt).format("LLLL"))
         .addField("Account Created At", moment(user.user.createdAt).format("LLLL"))
         .addField("Common Information", `ID: \`${user.user.id}\`\nDiscriminator: ${user.user.discriminator}\nBot: ${user.user.bot}\nDeleted User: ${user.deleted}`)
         .addField("Badges", newbadges.join(", ").toLowerCase() || "None")
-        .addField('Roles:', member1.roles.map(r => `${r}`).join(' | '), true)
         .setFooter(user.user.presence.status, stat[user.user.presence.status])
-    
-    
-    
-    
-
-
 
 
 
