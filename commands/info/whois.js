@@ -82,8 +82,6 @@ module.exports = {
 
     let member1 = message.mentions.members.first() || message.member,
   user = member.user;
-    let member1 = message.mentions.members.first() || message.member,
-  user = member.user;
     
     
     
