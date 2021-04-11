@@ -6,7 +6,7 @@ module.exports = {
   category: "moderation",
   description: "Sabko Kheech lo",
   run: async (client, message, args) => {if (!message.member.hasPermission("MOVE_MEMBERS")) {
-    return message.reply(":x: You don't have `Move_Members or Administrator` power to use this command.");
+    return message.reply(":x: You don't have `Move_Members` power to use this command.");
 }
 let channel = message.member.voice.channel;
 if (!channel) return message.channel.send("You Have To Be In A Voice Channel To Use This Command");
