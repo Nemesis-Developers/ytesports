@@ -5,7 +5,7 @@ module.exports = {
   aliases: ["drag", "dakka", "vm"],
   category: "moderation",
   description: "Sabko Kheech lo",
-  run: async (client, message, args) => {if (!message.member.permissions.any(["ADMINISTRATOR", "MOVE_MEMBERS"])) {
+  run: async (client, message, args) => {if (!message.member.hasPermission("MOVE_MEMBERS")) {
     return message.reply(":x: You don't have `Move_Members or Administrator` power to use this command.");
 }
 let channel = message.member.voice.channel;
