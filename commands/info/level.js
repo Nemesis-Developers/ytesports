@@ -33,7 +33,7 @@ const rank = new canvacord.Rank()
     .setUsername(user.username)
     .setDiscriminator(user.discriminator)
     .setRank(1, "a", false)
-    .setBackground("https://cdn.discordapp.com/attachments/827539576892817438/834082411980652615/1613999973833.jpg");
+    .setBackground("IMAGE", "https://i.imgur.com/YsaFP6x.jpg");
 
 rank.build()
     .then(data => {
