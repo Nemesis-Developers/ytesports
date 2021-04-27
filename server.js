@@ -175,6 +175,6 @@ client.on("ready", () => {
 
 
 client.on("ready", () => {
-    client.user.setActivity(`YT ESPOETS IS A PLATFORM FOR GAMERS WHERE THEY CAN IMPROVE THEIR GAMING SKILLS & GROW UP INDIAN ESPORTS COMMUNITY WORLDWIDE`, { type: "PLAYING", url: "https://www.youtube.com/c/YOUNGTERMINATORESPORTS"})
+    client.user.setActivity(`YT ESPORTS IS A PLATFORM FOR GAMERS WHERE THEY CAN IMPROVE THEIR GAMING SKILLS & GROW UP INDIAN ESPORTS COMMUNITY WORLDWIDE`, { type: "PLAYING", url: "https://www.youtube.com/c/YOUNGTERMINATORESPORTS"})
 })
 client.login(process.env.TOKEN);
