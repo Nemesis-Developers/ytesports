@@ -6,6 +6,7 @@ const moment = require("moment");
 const { CanvasSenpai } = require("canvas-senpai")
 const canva = new CanvasSenpai();
 const discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new discord.Client({
   disableEveryone: false
 });
@@ -165,7 +166,7 @@ client.on('message', msg => {
  if (!msg.content.startsWith('ID') || msg.author.bot) return;
  if(!msg.mentions.members.first()) return;
   const mtargets = msg.mentions.members;
-       let membed = new MessageEmbed()
+       let membed = new Discord.MessageEmbed()
        .setAuthor(`Paste the following to tag your teammates!`)
        .setTitle(`**${mtargets.map(member => member.user)}**`)
        .setColor("#E4A200")
@@ -180,7 +181,7 @@ client.on('message', msg => {
   
    if(msg.mentions.members.first()) return;
   const mbanda = msg.author;
-    const membedd = new MessageEmbed()
+    const membedd = new Discord.MessageEmbed()
     .setAuthor('Paste the following to tag yourself')
     .setTitle(`**${mbanda}**`)
     .setColor("#E4A200")
