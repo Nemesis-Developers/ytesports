@@ -39,7 +39,6 @@ module.exports = {
     );
     await message.channel.send(
       `Warnings of ${message.mentions.users.first().username} have been reset`
-    ).then(msg => {
-    msg.delete({ timeout: 3500 });
+    );
   }
 };
