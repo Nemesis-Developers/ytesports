@@ -178,13 +178,13 @@ client.on('message', msg => {
 
  if (!msg.content.startsWith('ID') || msg.author.bot) return;
  if(!msg.mentions.members.first()) return;
-  const targets = msg.mentions.members;
-       let embed = new Discord.MessageEmbed()
+  const mtargets = msg.mentions.members;
+       let membed = new Discord.MessageEmbed()
        .setAuthor(`Paste the following to tag your teammates!`)
-       .setTitle(`**${targets.map(member => member.user)}**`)
+       .setTitle(`**${mtargets.map(member => member.user)}**`)
        .setColor("#E4A200")
        .setFooter("Young Terminator Esports")
-msg.channel.send(embed)
+msg.channel.send(membed)
 
     }
 );
@@ -193,10 +193,10 @@ client.on('message', msg => {
   if (!msg.content.startsWith('ID') || msg.author.bot) return;
   
    if(msg.mentions.members.first()) return;
-  const banda = msg.author;
-    const embedd = new Discord.MessageEmbed()
+  const mbanda = msg.author;
+    const membedd = new Discord.MessageEmbed()
     .setAuthor('Paste the following to tag yourself')
-    .setTitle(`**${banda}**`)
+    .setTitle(`**${mbanda}**`)
     .setColor("#E4A200")
     .setFooter("Young Terminator Esports")
     msg.channel.send(embedd)
