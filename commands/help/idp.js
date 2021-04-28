@@ -14,7 +14,7 @@ module.exports = {
     
     let ping = args.slice(2).join(" ")
 
- message.channel.send(`**Room ID: ${args[0]}** /n **Password: ${args[1]}**`)
+ message.channel.send(`**Room ID: ${args[0]}** \n **Password: ${args[1]}**`)
   message.channel.send(`${ping}`)
   message.delete()
     
