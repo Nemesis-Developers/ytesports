@@ -102,45 +102,6 @@ if(!message.guild) return;
  
 })
 
-client.on("guildCreate", guild => {
-
-  const { MessageEmbed } = require("discord.js");
-
-  const ID = "787340979148947466";
-
-  const channel = client.channels.cache.get(ID);
-
-  const sowner = guild.owner.user;
-
-  if (!channel) return;
-
-  const embed = new MessageEmbed()
-
-    .setTitle("**I Joined a Server!**")
-
-    .addField(`**SERVER NAME**`, `\`\`\`${guild.name}\`\`\``)
-
-    .addField(`**SERVER ID**`, `\`\`\`${guild.id}\`\`\``)
-
-    .addField(`**SERVER OWNER**`, `\`\`\`${sowner.tag}\`\`\``)
-
-    .addField(`**OWNER ID**`, `\`\`\`${sowner.id}\`\`\``)
- 
-    .addField(`**CREATED ON**`, `\`\`\`${guild.createdAt}\`\`\``)
-  
-    .addField(`**MEMBERS**`, `\`\`\`${guild.memberCount}\`\`\``)
-  
-    .setTimestamp()
-
-    .setColor("#FA780B")
-
-    .setFooter(`Servers Count - ${client.guilds.cache.size}`);
-
-  channel.send(embed);
-
-});
-
-
 
 client.on("message", async message => {
 if(message.content.startsWith('X,afk'))return;
