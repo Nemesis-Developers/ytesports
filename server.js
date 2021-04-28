@@ -6,7 +6,7 @@ const moment = require("moment");
 const { CanvasSenpai } = require("canvas-senpai")
 const canva = new CanvasSenpai();
 const discord = require("discord.js");
-const discord = require("Discord.js");
+const Discord = require("discord.js");
 const client = new discord.Client({
   disableEveryone: false
 });
