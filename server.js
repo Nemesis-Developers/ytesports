@@ -170,7 +170,7 @@ client.on('message', msg => {
        .setAuthor(`Paste the following to tag your teammates!`)
        .setTitle(`**${mtargets.map(member => member.user)}**`)
        .setColor("#E4A200")
-       .setFooter("Young Terminator Esports")
+       .setFooter("Click and Hold To Copy")
 msg.channel.send(membed)
 
     }
@@ -185,7 +185,7 @@ client.on('message', msg => {
     .setAuthor('Paste the following to tag yourself')
     .setTitle(`**${mbanda}**`)
     .setColor("#E4A200")
-    .setFooter("Young Terminator Esports")
+    .setFooter("Click and Hold To Copy")
     msg.channel.send(membedd)
 });
 
