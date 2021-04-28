@@ -125,7 +125,7 @@ if(db.has(`afk-${message.author.id}+${message.guild.id}`)) {
 client.on('message', msg => {
  
 
- if (!msg.content.startsWith('ID') || msg.author.bot) return;
+ if (!msg.content.startsWith('!tag') || msg.author.bot) return;
  if(!msg.mentions.members.first()) return;
   const mtargets = msg.mentions.members;
        let membed = new discord.MessageEmbed()
@@ -139,7 +139,7 @@ msg.channel.send(membed)
 );
 
 client.on('message', msg => {
-  if (!msg.content.startsWith('ID') || msg.author.bot) return;
+  if (!msg.content.startsWith('!tag') || msg.author.bot) return;
   
    if(msg.mentions.members.first()) return;
   const mbanda = msg.author;
