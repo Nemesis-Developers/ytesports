@@ -158,20 +158,6 @@ if(db.has(`afk-${message.author.id}+${message.guild.id}`)) {
     }else;
  })
 
-
-
-
-
-
-
-
-// Set the bot's online/idle/dnd/invisible status
-client.on("ready", () => {
-    client.user.setStatus("online");
-    console.log("I'm ready")
-});
-
-
 // Mentionable form
 client.on('message', msg => {
  
@@ -203,6 +189,20 @@ client.on('message', msg => {
 });
 
 // mentionable done
+
+
+
+
+
+
+// Set the bot's online/idle/dnd/invisible status
+client.on("ready", () => {
+    client.user.setStatus("online");
+    console.log("I'm ready")
+});
+
+
+
 
 client.on("ready", () => {
     client.user.setActivity(`YT ESPORTS IS A PLATFORM FOR GAMERS WHERE THEY CAN IMPROVE THEIR GAMING SKILLS & GROW UP INDIAN ESPORTS COMMUNITY WORLDWIDE`, { type: "PLAYING", url: "https://www.youtube.com/c/YOUNGTERMINATORESPORTS"})
