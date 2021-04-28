@@ -5,6 +5,7 @@ const db =require("quick.db");
 const moment = require("moment");
 const { CanvasSenpai } = require("canvas-senpai")
 const canva = new CanvasSenpai();
+const discord = require("discord.js");
 const discord = require("Discord.js");
 const client = new discord.Client({
   disableEveryone: false
