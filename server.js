@@ -108,7 +108,7 @@ if(message.content.startsWith('X,afk'))return;
 if(db.has(`afk-${message.author.id}+${message.guild.id}`)) {
         const info = db.get(`afk-${message.author.id}+${message.guild.id}`)
         await db.delete(`afk-${message.author.id}+${message.guild.id}`)
-        message.reply(`Your afk status has been removed (${info})`).then(msg => {
+        message.reply(`Your afk status has been removed.`).then(msg => {
     msg.delete({ timeout: 3500 })
   });
    message.member.setNickname('')
