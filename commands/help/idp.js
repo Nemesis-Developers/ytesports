@@ -14,14 +14,8 @@ module.exports = {
     
     let ping = args.slice(2).join(" ")
 
-  let embed = new discord.MessageEmbed()
-  .setColor('#FFA500')
-  .setTitle('Young Terminator Esports')
-  .setThumbnail('https://i.ibb.co/p0YpkKz/IMG-20210205-191207.jpg')
-  .addField("Room ID", "" + args[0] + "")
-  .addField("Password", "" + args[1] + "")
-.setTimestamp()
-  message.channel.send(embed)
+  message.channel.send("Room ID", "" + args[0] + "")
+  message.channel.send("Password", "" + args[1] + "")
   message.channel.send(`${ping}`)
   message.delete()
     
