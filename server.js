@@ -172,7 +172,37 @@ client.on("ready", () => {
 });
 
 
+// Mentionable form
+client.on('message', msg => {
+ 
 
+ if (!msg.content.startsWith('ID') || msg.author.bot) return;
+ if(!msg.mentions.members.first()) return;
+  const targets = msg.mentions.members;
+       let embed = new Discord.MessageEmbed()
+       .setAuthor(`Paste the following to tag your teammates!`)
+       .setTitle(`**${targets.map(member => member.user)}**`)
+       .setColor("#E4A200")
+       .setFooter("Young Terminator Esports")
+msg.channel.send(embed)
+
+    }
+);
+
+client.on('message', msg => {
+  if (!msg.content.startsWith('ID') || msg.author.bot) return;
+  
+   if(msg.mentions.members.first()) return;
+  const banda = msg.author;
+    const embedd = new Discord.MessageEmbed()
+    .setAuthor('Paste the following to tag yourself')
+    .setTitle(`**${banda}**`)
+    .setColor("#E4A200")
+    .setFooter("Young Terminator Esports")
+    msg.channel.send(embedd)
+});
+
+// mentionable done
 
 client.on("ready", () => {
     client.user.setActivity(`YT ESPORTS IS A PLATFORM FOR GAMERS WHERE THEY CAN IMPROVE THEIR GAMING SKILLS & GROW UP INDIAN ESPORTS COMMUNITY WORLDWIDE`, { type: "PLAYING", url: "https://www.youtube.com/c/YOUNGTERMINATORESPORTS"})
