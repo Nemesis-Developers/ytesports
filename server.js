@@ -186,7 +186,7 @@ client.on('message', msg => {
     .setTitle(`**${mbanda}**`)
     .setColor("#E4A200")
     .setFooter("Young Terminator Esports")
-    msg.channel.send(embedd)
+    msg.channel.send(membedd)
 });
 
 // mentionable done
